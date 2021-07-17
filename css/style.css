@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.navigation {
+  margin-top: 25px;
+  font-family: var(--font1);
+  height: 74px;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left {
+  display: flex;
+  font-size: 23px;
+}
+
+.nav-left span {
+  padding-top: 2px;
+}
+
+.nav-left ul {
+  display: flex;
+  align-items: center;
+  margin: 0 75px;
+  font-weight: bold;
+  /* font-size: 30px; */
+}
+
+.nav-left ul li {
+  list-style: none;
+  margin: 0 14px;
+  font-family: var(--font2);
+}
+
+.nav-left ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-left a:hover {
+  color: var(--main-bg-color);
+}
+
+.nav-left li:hover {
+  transform: translateY(-30%);
+}
+
+.nav-right {}
+
+.logo {
+  padding-top: 3px;
+  width: 5.4vw;
+}
+
+.content {
+  height: 395px;
+  /* background-color: blue; */
+  display: flex;
+  margin-top: 4vh;
+  position: relative;
+}
+
+.content::after {
+  content: "";
+  background-image: url('../images/11.svg');
+  position: absolute;
+  width: 100%;
+  height: inherit;
+  opacity: 0.15;
+  border-radius: 10px;
+}
+
+.content-left {
+  font-family: var(--font1);
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  padding: 50px;
+  z-index: 1;
+}
+
+.content-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-right img {
+  height: 300px;
+  border: 2px solid black;
+  border-radius: 200px;
+}
+
+.home-articles {
+  /* height: 455px; */
+  background-color: #C9E4C5;
+  padding: 16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.home-article {
+  display: flex;
+  margin: 25px;
+}
+
+.home-article img {
+  width: 300px;
+}
+
+.home-article-content {
+  align-self: center;
+  padding: 0 25px;
+}
+
+.home-article-content a{
+  text-decoration: none;
+  color: black;
+}
+
+/* .home-articles{} */
+.footer {
+  height: 50px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.footer a {
+  color: white;
+}
+
+@keyframes anime {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-30%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
